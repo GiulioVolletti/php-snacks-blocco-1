@@ -11,4 +11,42 @@
   schema:
   Olimpia Milano - Cantù | 55 - 60
   */
+  $matches = [
+    [
+      "casa" => [
+        "nome" => "Vanoli Basket Cremona",
+        "punti" => 58,
+      ],
+      "ospite" => [
+        "nome" => "UNAHOTELS Reggio Emilia",
+        "punti" => 83,
+      ],
+    ],
+    [
+      "casa" => [
+        "nome" => "Allianz Pallacanestro Trieste",
+        "punti" => 63,
+      ],
+      "ospite" => [
+        "nome" => "A|X Armani Exchange Milano",
+        "punti" => 76,
+      ],
+    ],
+    [
+      "casa" => [
+        "nome" => "Banco di Sardegna Sassari",
+        "punti" => 67,
+      ],
+      "ospite" => [
+        "nome" => "Carpegna Prosciutto Pesaro",
+        "punti" => 54,
+      ],
+    ]
+  ];
+  // echo count($matches);
+  for ($i=0; $i < count($matches); $i++) {
+    // Olimpia Milano - Cantù | 55 - 60
+    echo  $matches[$i]["casa"]["nome"]." - ".$matches[$i]["ospite"]["nome"]." | ".$matches[$i]["casa"]["punti"]." - ".$matches[$i]["ospite"]["punti"]."<br>";
+
+  }
 ?>

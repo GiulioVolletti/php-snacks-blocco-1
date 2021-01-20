@@ -14,7 +14,7 @@
   $name = $_GET["name"];
   $mail = $_GET["mail"];
   $age = $_GET["age"];
-  $result = "";
+  
 
   if (empty($mail) ) {
     echo "Accesso negato inserire mail";
